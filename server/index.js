@@ -20,3 +20,9 @@ app
   .on("error", (err) => {
     console.error("Error:", err.message);
   });
+
+  const sayWelcome = (req, res) => {
+  res.send("Welcome to wild-series");
+};
+
+app.get("/", sayWelcome);
