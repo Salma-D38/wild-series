@@ -22,7 +22,11 @@ title varchar(50) not null,
 synopsis text not null,
 poster varchar(100), 
 country varchar(100), 
-year varchar(4)
+ year int not null,
+category_id int unsigned not null,
+foreign key(category_id) references category(id)
 );
+
+
 
 
